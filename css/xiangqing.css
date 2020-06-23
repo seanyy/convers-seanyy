@@ -1,0 +1,189 @@
+*{
+	margin: 0;
+	padding: 0;
+	transition: none;
+}
+.head{
+	top: 0!important;
+}
+.gz{
+	top: 84px;
+}
+.weibu{
+	top: 100px;
+}
+.end{
+	margin-top: 100px;
+}
+.xq{
+	position: relative;
+	width: 100%;
+	height: 1500px;
+	top: 135px;
+}
+.xq>.xq-content{
+	position: relative;
+	margin: 0 auto;
+	width: 1200px;
+	height: 1500px;
+	top: 50px;
+}
+.xq>.xq-content>.left{
+	float: left;
+	width: 250px;
+	height: 400px;
+	padding-top: 10px;
+}
+.xq>.xq-content>.left ul li{
+	float: none;
+	height: 50px;
+	line-height: 60px;
+}
+.xq>.xq-content>.left ul li a{
+	position: relative;
+	color: black;
+	transition: none;
+	font-size: 14px;
+	top: -6px;
+	left: 10px;
+}
+
+.xq>.xq-content>.left ul li span{
+	font-size: 30px;
+}
+.xq>.xq-content>.left ul li .s1{
+	font-size: 22px!important;
+	color: firebrick;
+}
+.xq>.xq-content>.left>.bigimg{
+	background: white;
+	display: none;
+	float: left;
+	position: absolute;
+	width: 250px;
+	height: 600px;
+	overflow: hidden;
+	top: -0px;
+	left: -1px;
+	border: 1px solid #E4E4E4;
+}
+.xq>.xq-content>.left>.bigimg img{
+	position: absolute;
+}
+.xq>.xq-content>.zj{
+	position: relative;
+	text-align: center;
+	float: left;
+	width: 700px;
+	height: 1450px;
+ }
+.xq>.xq-content>.zj h2{
+	height: 80px;
+	font-weight: bold;
+	line-height: 40px;
+	font-family: "agency fb";
+}
+.xq>.xq-content>.zj>.smallimg{
+	margin: 0 auto;
+	position: relative;
+	width: 500px;
+	height: 500px;
+}
+.xq>.xq-content>.zj>.smallimg>img{
+	float: left;
+	width: 500px;
+	position: absolute;
+	top: 0;
+	left: 0px;
+}
+.xq>.xq-content>.zj>.smallimg>.layer{
+	position: absolute;
+	border: 1px solid #E4E4E4;
+	width: 60px;
+	height: 120px;
+	background: rgb(251,251,251,0.5);
+}
+
+.xq>.xq-content>.zj>.zj-bottom{
+	position: ab;
+	float: left;
+	width: 100%;
+	height: 80px;
+}
+.xq>.xq-content>.zj>.zj-bottom ul{
+	margin: 0 auto;
+	width: 78%;
+	height: 80px;
+	text-align: center;
+}
+.xq>.xq-content>.zj>.zj-bottom ul li{
+	width: 90px;
+	height: 90px;
+}
+.xq>.xq-content>.zj>.zj-bottom ul li:hover{
+	border: 1px solid #E4E4E4;
+}
+.xq>.xq-content>.zj>.text{
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 600px;
+	padding-top: 30px;
+	text-align: left;
+	line-height: 25px;
+}
+.xq>.xq-content>.zj>.text>h4{
+	font-weight: bold;
+}
+.xq>.xq-content>.zj>.text li{
+	margin-left: 20px;
+	list-style: disc;
+	float: none;
+}
+.xq>.xq-content>.zj>.text button{
+	margin-left: 200px;
+	width: 300px;
+	height: 50px;
+	background: black;
+	color: white;
+	font-size: 18px;
+	font-family: "agency fb";
+	border: 0;
+	font-weight: bold;
+	margin-top: 50px;
+}
+.xq>.xq-content>.zj>.text button:hover{
+	background: white;
+	border: 1px solid #E4E4E4;
+	color: black;
+}
+.xq>.xq-content>.right{
+	float: left;
+	width: 250px;
+	height: 400px;
+	font-size: 14px;
+	padding-top: 10px;
+}
+.xq>.xq-content>.right>.p1{
+	color: red;
+	line-height: 20px;
+}
+.xq>.xq-content>.right>.sel{
+	width: 80%;
+	height: 130px;
+	padding-top: 10px;
+}
+.xq>.xq-content>.right>.sel select{
+	height: 40px;
+	margin-top: 10px;
+}
+.xq>.xq-content>.right>button{
+	width: 150px;
+	height: 50px;
+	margin-top: 10px;
+	background: firebrick;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: 0;
+}

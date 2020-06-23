@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="css/all.css"/>
+		<link rel="stylesheet" type="text/css" href="css/xiangqing.css"/>
+	</head>
+	<body>
+		<!-- 头部 -->
+		<div class="head">
+			<div class="head-dh">
+				<div class="left">
+					<a href="index.html"><img src="img/login1.png" /></a>
+				</div>
+				<div class="zj">
+					<p></p>
+				</div>
+				<div class="right">
+					<ul class="ul1">
+						<li><a id="login" title="登录/注册" href="">登录</a> / <a id="register" title="登录/注册" href="">注册</a></li>
+						<li>
+							<a href="">购物车</a>
+							<div style="background: #940000;" id="ren" class="ren">
+								<span style="font-size: 35px;" class="">0</span>
+							</div>
+						</li>
+					</ul>
+					<ul class="ul2">
+						<li>
+							<div id="ren" class="ren">
+								<span class="glyphicon glyphicon-comment"></span>
+							</div>
+						</li>
+						<li>
+							<div id="sousuo" class="ren">
+								<span class="glyphicon glyphicon-search"></span>
+							</div>
+						</li>
+						<li>
+							<div id="ren" class="ren">
+								<span class="glyphicon glyphicon-question-sign"></span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 登录 -->
+			<div style="display: none;" class="login">
+				<div class="guanbi">
+					<span class="glyphicon glyphicon-remove"></span>
+				</div>
+				<div class="login-content">
+					<div class="left">
+						<p>还未注册?</p>
+						<div class="hei">注册账户 <span class="glyphicon glyphicon-menu-right"></span> </div>
+					</div>
+					<div class="right">
+						<p>已成为会员?</p>
+						<form action="index.html" name="myform1">
+							<input class="ip1" type="text" placeholder="手机号码"/><br />
+								<span id="span1"></span>
+							<br /><br />
+							<input class="ip1" type="text" placeholder="账户密码"/><br />
+								<span id="span2"></span>
+							<br /><br />
+							<input class="ip2" type="checkbox" /><span>一旦登录，即表明您同意匡威更新的 隐私政策和使用规则</span><br />
+								<span id="span3"></span><br />
+							<input class="sub1" type="submit" value="登录"/><br /><br /><br/><br/>
+							<input class="ip3" type="checkbox" /><span>记住登陆名</span>
+						</form>
+						<a href="">忘记密码?</a>
+					</div>
+				</div>
+				<div class="all1"></div>
+			</div>
+			<!-- 注册 -->
+			<div style="display: none;" class="register">
+				<div class="guanbi1">
+					<span class="glyphicon glyphicon-remove"></span>
+				</div>
+				<div class="content">
+					<form action="index.html" name="myform">
+						<table border="0">
+							<tr>
+								<td>手机号码<span class="red">*</span><br />
+									<input id="phone" type="text" placeholder="135xxxx3333"/>
+									<br/><span class="span3"></span>
+								</td>
+								<td>邮箱<span class="red">*</span><br />
+									<input id="email" type="text" placeholder="1047537295@qq.com"/>
+									<br/><span class="span4"></span>
+								</td>
+								<td>性别<span class="red">*</span><br />
+									<div class="sex">
+										<div class="boys">
+											<input name="sex" type="radio" /><p>&nbsp;&nbsp;男的</p>
+										</div>
+										<div class="boys">
+											<input name="sex" type="radio" /><p>&nbsp;&nbsp;女的</p>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>输入密码<span class="red">*</span><br />
+									<input id="pwd" type="password" placeholder="密码至少为6位数字"/>
+									<br/><span class="span5"></span>
+								</td>
+								<td>确认密码<span class="red">*</span><br />
+									<input id="upwd" type="password" placeholder="请再次输入密码"/>
+									<br/><span class="span6"></span>
+								</td>
+								<td>生日（年-月-日）<span class="red">*</span><br />
+									<select class="sel1">
+										<option>2019</option>
+										<option>2014</option>
+										<option>2015</option>
+										<option>2016</option>
+										<option>2017</option>
+										<option>2018</option>
+									</select>
+									<select class="sel1">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+										<option>6</option>
+									</select>
+									<select class="sel1">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+										<option>6</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td class="td0" >短信验证码<span class="red">*</span><br />
+									<input id="yzm" class="ip11" type="text"/>
+									<input class="ip22" type="button" value="发送短信验证码"/>
+									<br/><span class="span7"></span>
+								</td>
+								<td>
+								</td>
+								<td>
+									<div class="gouxuan">
+										<input class="input1" type="checkbox" /><br><p>一旦创建账户，即表明您同意匡威更新的隐私政策和使用规则</p>
+										<span class="span8"></span>
+									</div><br />
+									<input class="sub" type="submit"value="注册账户"/><br />
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+				<div class="all2"></div>
+			</div>
+			<!-- 搜索 -->
+			<div id="xsousuo" style="display: none;" class="sousuo">
+				<div>
+					<div class="content">
+						<input id="jujiao" type="text" placeholder="想找什么随便搜"/>
+						<div class="tubiao">
+							<span class="glyphicon glyphicon-search"></span>
+						</div>
+						<div class="tubiao">
+							<span id="gsousuo" class="glyphicon glyphicon-remove"></span>
+						</div>
+					</div>
+				</div>
+				<div class="all">
+				</div>
+			</div>
+			<!-- 菜单栏 -->
+			<div class="bottom">
+				<div class="content">
+					<ul>
+						<li id="boy"><a href="">男的</a>&nbsp;<span class="glyphicon glyphicon-triangle-bottom"></span></li>
+						<li id="girl"><a href="shangping.html">女的</a>&nbsp;<span class="glyphicon glyphicon-triangle-bottom"></span> </li>
+						<li id="et"><a href="">儿童</a>&nbsp;<span class="glyphicon glyphicon-triangle-bottom"></span> </li>
+						<li><a href="">联合合作款</a>&nbsp;<span class="glyphicon glyphicon-triangle-bottom"></span> </li>
+						<li><a href="">店铺分布</a>&nbsp;<span class="glyphicon glyphicon-triangle-bottom"></span> </li>
+					</ul>
+				</div>
+				<!-- 男的二级菜单栏 -->
+				<div class="boy">
+					<div class="boy-imgs">
+						<ul>
+							<li><a href=""><img src="img/ia_600000000.jpg" ><p>踩的</p></a></li>
+							<li><a href=""><img src="img/ia_600000001.jpg" ><p>穿的</p></a></li>
+							<li><a href=""><img src="img/ia_600000002.jpg" ><p>T恤</p></a></li>
+							<li><a href=""><img src="img/ia_600000003.jpg" ><p>戴的</p></a></li>
+							<li><a href=""><img src="img/ia_600000016.jpg" ><p>新产品</p></a></li>
+							<li><a href=""><img src="img/ia_600000017.jpg" ><p>优惠</p></a></li>
+							<li><a href=""><img src="img/ia_600000018.jpg" ><p>经典款</p></a></li>
+							<li><a href=""><img src="img/ia_600000007.jpg" ><p>CHUCK 70</p></a></li>
+							<li><a href=""><img src="img/ia_600000008.jpg" ><p>ONE STAR</p></a></li>
+							<li><a href=""><img src="img/ia_600000009.jpg" ><p>ALL STAR</p></a></li>
+							<li><a href=""><img src="img/ia_600000010.jpg" ><p>CONS</p></a></li>
+							<li><a href=""><img src="img/ia_600000011.jpg" ><p>JACK PURECELL</p></a></li>
+						</ul>
+					</div>
+					<div class="dang"></div>
+				</div>
+				<!-- 女的二级菜单栏 -->
+				<div class="girl">
+					<div class="girl-imgs">
+						<ul>
+							<li><a href=""><img src="img/ia_600000012.jpg" ><p>踩的</p></a></li>
+							<li><a href=""><img src="img/ia_600000013.jpg" ><p>穿的</p></a></li>
+							<li><a href=""><img src="img/ia_600000014.jpg" ><p>T恤</p></a></li>
+							<li><a href=""><img src="img/ia_600000015.jpg" ><p>戴的</p></a></li>
+							<li><a href=""><img src="img/ia_600000016.jpg" ><p>新产品</p></a></li>
+							<li><a href=""><img src="img/ia_600000017.jpg" ><p>优惠</p></a></li>
+							<li><a href=""><img src="img/ia_600000018.jpg" ><p>经典款</p></a></li>
+							<li><a href=""><img src="img/ia_600000019.jpg" ><p>CHUCK 70</p></a></li>
+							<li><a href=""><img src="img/ia_600000020.jpg" ><p>ONE STAR</p></a></li>
+							<li><a href=""><img src="img/ia_600000021.jpg" ><p>ALL STAR</p></a></li>
+							<li><a href=""><img src="img/ia_600000022.jpg" ><p>CONS</p></a></li>
+							<li><a href=""><img src="img/ia_600000023.jpg" ><p>JACK PURECELL</p></a></li>
+						</ul>
+					</div>
+					<div class="dang"></div>
+				</div>
+				<!-- 儿童菜单栏 -->
+				<div class="et">
+					<div class="et-imgs">
+						<ul>
+							<li><a href=""><img src="img/ia_600000024.jpg" ><p>(1-4岁)</p></a></li>
+							<li><a href=""><img src="img/ia_600000025.jpg" ><p>(4-8岁)</p></a></li>
+							<li><a href=""><img src="img/ia_600000026.jpg" ><p>(4-12岁)</p></a></li>
+							<li><a href=""><img src="img/ia_600000027.jpg" ><p>(8-12岁)</p></a></li>
+						</ul>
+					</div>
+					<div class="dang"></div>
+				</div>
+			</div>
+		</div>
+		<!-- 详情 -->
+		<div class="xq">
+			<div class="xq-content">
+				<!-- 左边 -->
+				<div class="left">
+					<ul>
+						<li><span class="glyphicon glyphicon-share"></span><a href="">分享</a></li>
+						<li><span class="glyphicon glyphicon-heart"></span><a href="">加入收藏(999+)</a></li>
+						<li><span class="glyphicon glyphicon-star s1"></span>
+							<span class="glyphicon glyphicon-star s1"></span>
+							<span class="glyphicon glyphicon-star s1"></span>
+							<span class="glyphicon glyphicon-star s1"></span>
+							<span class="glyphicon glyphicon-star s1"></span>
+						<a href="">(99+)</a></li>
+					</ul>
+					<div class="bigimg">
+						<img style="display: none;" src="img/ia_1300001291.png" />
+						<img style="display: none;" src="img/ia_100001473.png" />
+						<img style="display: none;" src="img/ia_100001444.png" />
+						<img style="display: none;" src="img/ia_100001473.png" />
+						<img style="display: none;" src="img/ia_100001444.png" />
+						<img style="display: none;" src="img/ia_3100000034.png" >
+					</div>
+				</div>
+				<!-- 中间 -->
+				<div class="zj">
+					<h2>【男女同款】Chuck Taylor All Star Core 常青款 中性<br/>价格 &yen;439.00</h2>
+					<div class="smallimg">
+						<img src="img/ia_1300000028.png" >
+						<img style="display: none;" src="img/ia_100000029.png" >
+						<img style="display: none;" src="img/ia_2500001352.png" >
+						<img style="display: none;" src="img/ia_2900000066.png" >
+						<img style="display: none;" src="img/ia_3100000005.png" >
+						<img style="display: none;" src="img/ia_3100000034.png" >
+						<div style="display: none;" class="layer"></div>
+					</div>
+					<div class="zj-bottom">
+						<ul>
+							<li>
+								<img src="img/ia_1300000035.png" />
+							</li>
+							<li>
+								<img src="img/ia_1300000030.png" />
+							</li>
+							<li>
+								<img src="img/ia_1300000031.png" />
+							</li>
+							<li>
+								<img src="img/ia_1300000032.png" />
+							</li>
+							<li>
+								<img src="img/ia_1300000033.png" />
+							</li>
+							<li>
+								<img src="img/ia_1300000034.png" />
+							</li>
+						</ul>
+					</div>
+					<div class="text">
+						<h4>经典长青</h4>
+						<ul>
+							<li>经久不衰的纯色经典常青款，鞋身侧边具有标志性的Chuck Tayor All Star 圆形贴标</li>
+							<li>纯粹的帆布面料，高帮系带，保留着Converse的固有传统风格</li>
+							<li>橡胶底耐磨有弹性，鞋底的纹路又有起到防滑的作用</li>
+							<li>鞋底侧边条纹和清晰的装饰纹路，传承了经典</li>
+						</ul>
+						<br />
+						<p>温馨提示</p>
+						<p>因商品的新旧更新，本商品在同一个货号情形下，新旧款商品会呈现有两种不同的Logo及其他细微差异，新旧款商品仓库会随机安排发货，如您介意，请您在购买商品前完整查看页面显示新旧款商品图片，谨慎购买。感谢您的关注和理解，祝您购物愉快。</p>
+						<br />
+						<h4>价格说明（此说明仅当出现价格比较时有效）</h4>
+						<p>划线价格：划线的价格可能是商品的专柜吊牌价或正品零售价指导价或该商品的曾经展示过的销售价等，仅供您参考。<br/>未划线价格：未划线的价格是商品在官网上的销售标价，具体的成交价格可能因为会员使用优惠券发生变化，最终以订单结算页价格为准。</p>
+						<button type="button">Chuck Taylor All Star</button>
+					</div>
+				</div>
+				<!-- 右边 -->
+				<div class="right">
+					<p>颜色:黑</p>
+					<p>型号:101010001</p>
+					<p class="p1">12/9-12/13 满600减100；满1000减200；上不封顶</p>
+					<div class="sel">
+						<span>尺码:</span>
+						<select>
+							<option>请选择尺码</option>
+							<option>35</option>
+							<option>35.5</option>
+							<option>36</option>
+							<option>36.5</option>
+							<option>37</option>
+							<option>37.5</option>
+							<option>38</option>
+						</select>
+						<br/><span>数量:</span>
+						<select>
+							<option>请选择数量</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+							<option>7</option>
+						</select>
+					</div>
+					<button type="button">立即购买</button>
+					<button type="button">+添加到购物车</button>
+				</div>
+			</div>
+		</div>
+		<div class="gz">
+			<div class="text">
+				<h2>关注CONVERSE</h2><br />
+				<h5>Converse同时活跃在各类社交网络平台，点击下列你所喜爱的常用社交平台，密切关注Converse的最新产品与资讯。</h5>
+				<br /><br /><div class="tubiao">
+					<div class="vb"></div>
+					<div class="vx"></div>
+				</div>
+			</div>
+		</div>
+		<!-- 尾部 -->
+		<div class="weibu">
+			<div class="content">
+				<hr style="border: 1px solid #E4E4E4; background: #E4E4E4;"/>
+				<table border="0" width="1200px">
+					<tr class="tr2">
+						<td><a href="">男的</a></td>
+						<td><a href="">女的</a></td>
+						<td><a href="">儿童</a></td>
+						<td><a href="">LGOBAL</a></td>
+					</tr>
+					<tr class="tr1">
+						<td><a href="">CHUCK TAYLOR ALL STAR</a></td>
+						<td><a href="">CHUCK TAYLOR ALL STAR</a></td>
+						<td><a href="">CHUCK TAYLOR ALL STAR</a></td>
+						<td></td>
+					</tr>
+					<tr class="tr1">
+						<td><a href="">CONVERSE CONS</a></td>
+						<td><a href="">CONVERSE CONS</a></td>
+						<td><a href="">CONVERSE CONS</a></td>
+						<td></td>
+					</tr>
+					<tr class="tr1">
+						<td><a href="">JACK PURCELL</a></td>
+						<td><a href="">JACK PURCELL</a></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="tr1">
+						<td><a href="">CHUCK II</a></td>
+						<td><a href="">CHUCK II</a></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+				<br />
+				<table border="0" width="1200px">
+					<tr class="tr3">
+						<td><a href="">踩的</a> </td>
+						<td><a href="">踩的</a></td>
+						<td><a href="">踩的</a></td>
+						<td></td>
+					</tr>
+					<tr class="tr3">
+						<td><a href="">穿的</a></td>
+						<td><a href="">穿的</a></td>
+						<td><a href="">穿的</a></td>
+						<td></td>
+					</tr>
+					<tr class="tr3">
+						<td><a href="">戴的</a></td>
+						<td><a href="">戴的</a></td>
+						<td><a href="">戴的</a></td>
+						<td></td>
+					</tr>
+					<tr class="tr3">
+						<td><a href="">优惠</a></td>
+						<td><a href="">优惠</a></td>
+						<td><a href="">优惠</a></td>
+						<td></td>
+					</tr>
+				</table>
+				<br />
+				<table border="0" width="750px">
+					<tr class="tr2">
+						<td><a href="">我的账户</a></td>
+						<td><a href="">帮助和购物指南</a></td>
+						<td><a href="">NIKE</a></td>
+					</tr>
+					<tr class="tr3">
+						<td><a href="">会员中心</a></td>
+						<td><a href="">账户</a></td>
+						<td><a href="">NIKE+</a></td>
+					</tr>
+					<tr class="tr3">
+						<td><a href="">现有订单</a></td>
+						<td><a href="">订单</a></td>
+						<td><a href="">JORDAN</a></td>
+					</tr>
+					<tr class="tr3">
+						<td><a href="">过去订单</a></td>
+						<td><a href="">尺码</a></td>
+						<td><a href=""></a></td>
+					</tr>
+					<tr class="tr3">
+						<td><a href="">退换货</a></td>
+						<td><a href="">退款和货款</a></td>
+						<td><a href=""></a></td>
+					</tr>
+					<tr class="tr3">
+						<td><a href="">账户设置</a></td>
+						<td><a href="">换货</a></td>
+						<td><a href=""></a></td>
+					</tr>
+					<tr class="tr3">
+						<td><a href="">地址薄</a></td>
+						<td><a href="">配送</a></td>
+						<td><a href=""></a></td>
+					</tr>
+					<tr class="tr3">
+						<td><a href="">我的优惠券</a></td>
+						<td><a href="">联系我们</a></td>
+						<td><a href=""></a></td>
+					</tr>
+					<tr class="tr3">
+						<td><a href="">我的收藏</a></td>
+						<td><a href="">常见问题</a></td>
+						<td><a href=""></a></td>
+					</tr>
+					<tr class="tr3">
+						<td><a href="">我的评论</a></td>
+						<td><a href=""></a></td>
+						<td><a href=""></a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<!-- 尾部 -->
+		<div class="end">
+			<div class="content">
+				<ul>
+					<li><a href="">关于我们</a></li>
+					<li><a href="">帮助和购物指南</a></li>
+					<li><a href="">隐私政策</a></li>
+					<li><a href="">使用规则</a></li>
+				</ul>
+				<div class="img"></div>
+				<div class="text">
+					<span>@匡威体育用品（中国）有限公司 保留所有权利沪ICP备11044134号-2<img src="img/ia_600000083.png"/>沪公网安备 31011002001667号<img src="img/ia_600000084.png"/>电子营业执照 公司证照</span>
+				</div>
+				<br />
+				<div title="亲爱的市民朋友亲爱的市民朋友，上海警方反查劝阻，电话96211联系，专门针对避免宁财产被骗受损而设，请您一旦收到来电立即接听" class="img1"></div>
+			</div>
+		</div>
+		<!-- 回到顶部 -->
+		<div class="top">
+			<img src="img/gotop.png" />
+		</div>
+		<script src="js/all.js"></script>
+		<script src="js/xiangqing.js"></script>
+	</body>
+</html>
